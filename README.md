@@ -6,7 +6,7 @@ Given a lossless, shuntless power system at an operating point, the package eval
 
 ## Installation
 
-This project was developed using `Python=3.14`. You can install this package in development mode using pip into your desired python environment, which uses the pyproject.toml file.
+This project was developed using `Python=3.10`. You can install this package in development mode using pip into your desired python environment, which uses the pyproject.toml file.
 
 ```bash
 pip install -e .
