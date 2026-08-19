@@ -1,0 +1,33 @@
+[project]
+name = "inverter-stability-criteria"
+version = "1.0.0"
+description = "Evaluate the inverter stability criteria formulated as corollaries in the associated publication."
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "Iva Bačić"},
+    {name = "Philipp C. Böttcher"}
+]
+requires-python = ">=3.10"
+dependencies = [
+   "matplotlib>=3.8",
+   "networkx>=3.0",
+   "numpy>=1.26",
+   "pandas>=2.0",
+   "pandapower>=3.0",
+]
+
+[project.urls]
+Repository = "https://github.com/ibfzj/inverter_stability_criteria"
+Paper = "https://arxiv.org/abs/2607.08260"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=77.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["inverter_stability*"]
+namespaces = false
